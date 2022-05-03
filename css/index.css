@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+}
+:root {
+    --bgc-prim: #1F2937;
+    --bgc-sec: #ECFDF5;
+    --bgc-accent: #10B981;
+    --bgc-place: #2F3E53;
+    --bgc-body: #2F3E53;
+
+    --ff-prim: 'Karla', sans-serif;
+    --ff-sec: 'Inter', sans-serif;
+
+    --fc-prim: #FFFFFF;
+    --fc-sec: #D5D4D8;
+    --fc-accent: #10B981;
+
+    --fs-small: 16px;
+    --fs-medium: 20px;
+    --fs-large: 40px;
+
+    --fw-normal: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-bolder: 800;
+
+}
+html,
+body,
+h1,
+p{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--bgc-sec);
+    color: var(--fc-prim);
+    font-size: var(--fs-small);
+    font-family: var(--ff-prim);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: var(--bgc-body);
+}
+.container{
+    background-color: var(--bgc-prim);
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: 3px solid var(--bgc-sec);
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 550px;
+    padding: 0 52px;
+}
+.password_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    gap: 1rem;
+}
+.heading{
+    font-size: var(--fs-large);
+    font-weight: 800;
+    line-height: 40px;
+    padding-top: 118px;
+    margin-bottom: .5rem;
+}
+.heading span{
+    display:block;
+    color: var(--fc-accent);
+}
+.sub_heading {
+    color: var(--fc-sec);
+    font-size: var(--fs-medium);
+    font-family: var(--ff-sec);
+    font-weight: var(--fw-normal); 
+    margin-bottom: .5rem;
+}
+button {
+    font-family: var(--ff-sec);
+    font-weight: 500;
+    font-size: var(--fs-small);
+    line-height: 24px;
+    background-color: var(--bgc-accent);
+    color: var(--fc-prim);
+    padding: .5rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 4rem;
+}
+hr {
+    border: 1px solid var(--bgc-place);
+    margin: 2rem 0;
+    width: 100%;
+}
+.password{
+    background-color: var(--bgc-place);
+    color: var(--fc-accent);
+    font-size: var(--fs-medium);
+    font-family: var(--ff-sec);
+    font-weight: var(--fw-normal); 
+    padding: .5rem;
+    border-radius: 5px;
+}
