@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Karla:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./media/cog-outline.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/index.css">
     <script defer type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
     <title>Password Generator</title>
@@ -19,7 +20,15 @@
                 <span>random password</span>
             </h1>
             <p class="sub_heading">Never use an insecure password again.</p>
-            <button id="btn">Generate passwords</button>
+            <div class="input-container">
+                <label for="pwdLenght">Enter Password length (10 - 15)</label>
+                <div class="input-wrapper">
+                    <input type="text" name="passwordlength" id="pwdLenght">
+                    <small class="errorMsg"></small> 
+                </div>
+
+                <button id="btn">Generate passwords</button>
+            </div>
             <hr>
             <div class="password_container">
                 <p id="pwd-el1" class="password"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></p>
@@ -28,6 +37,7 @@
                 <p id="pwd-el4" class="password"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></p>
                 
             </div>
+            <hr>
         </div>
     </div>
     <script src="./js/index.js"></script>
